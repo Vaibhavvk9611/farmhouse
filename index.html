@@ -11,16 +11,16 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #f5f7f6;
-  color: #333;
+  background: #0f172a;
+  color: #e2e8f0;
 }
 
 /* HEADER */
 header {
-  background: linear-gradient(135deg, #1f3d2b, #2e5c41);
-  color: #fff;
-  padding: 25px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
   text-align: center;
+  padding: 25px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 header h1 {
@@ -29,32 +29,31 @@ header h1 {
 }
 
 header p {
-  margin-top: 8px;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 /* NAV */
 nav {
-  background: #2e5c41;
   text-align: center;
   padding: 12px;
+  background: #1e293b;
 }
 
 nav a {
-  color: white;
+  color: #e2e8f0;
   margin: 0 15px;
   text-decoration: none;
   font-weight: 500;
 }
 
 nav a:hover {
-  color: #ffd;
+  color: #38bdf8;
 }
 
 /* HERO */
 .hero {
   background: url('img1.jpg') center/cover no-repeat;
-  height: 65vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,9 +61,9 @@ nav a:hover {
 
 .hero h2 {
   background: rgba(0,0,0,0.6);
-  color: white;
   padding: 20px 30px;
-  border-radius: 10px;
+  border-radius: 12px;
+  color: #fff;
 }
 
 /* SECTIONS */
@@ -73,11 +72,10 @@ section {
 }
 
 h2 {
-  color: #1f3d2b;
-  margin-bottom: 20px;
+  color: #38bdf8;
 }
 
-/* FEATURES */
+/* CARDS */
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -85,15 +83,17 @@ h2 {
 }
 
 .card {
-  background: white;
+  background: rgba(255,255,255,0.05);
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
   transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.1);
 }
 
 .card:hover {
   transform: translateY(-5px);
+  background: rgba(255,255,255,0.08);
 }
 
 /* GALLERY */
@@ -115,33 +115,34 @@ h2 {
 
 /* CONTACT */
 .contact-box {
-  background: white;
+  background: rgba(255,255,255,0.05);
   padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-}
-
-/* FOOTER */
-footer {
-  background: #1f3d2b;
-  color: white;
-  text-align: center;
-  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.1);
 }
 
 /* BUTTON */
 .btn {
   display: inline-block;
-  margin-top: 10px;
-  padding: 10px 18px;
-  background: #2e5c41;
-  color: white;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #38bdf8;
+  color: black;
   border-radius: 6px;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .btn:hover {
-  background: #1f3d2b;
+  background: #0ea5e9;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #020617;
+  margin-top: 30px;
 }
 </style>
 </head>
@@ -150,7 +151,7 @@ footer {
 
 <header>
   <h1>Dalabanjan Oaks Farm House</h1>
-  <p>Nature • Comfort • Peace</p>
+  <p>Luxury • Nature • Peace</p>
 </header>
 
 <nav>
@@ -161,24 +162,24 @@ footer {
 </nav>
 
 <div class="hero">
-  <h2>Experience Luxury Living in Nature 🌿</h2>
+  <h2>Experience Premium Nature Stay 🌿</h2>
 </div>
 
 <section id="about">
-  <h2>About Our Farm House</h2>
+  <h2>About</h2>
   <p>
-    Dalabanjan Oaks Farm House is a peaceful getaway surrounded by greenery.
-    Perfect for family trips, friends gatherings, and weekend relaxation.
+    Dalabanjan Oaks Farm House offers a perfect getaway with nature, comfort,
+    and peaceful surroundings. Ideal for weekend trips, parties, and relaxation.
   </p>
 </section>
 
 <section id="features">
-  <h2>Our Features</h2>
+  <h2>Features</h2>
   <div class="features">
     <div class="card">🏊 Swimming Pool</div>
     <div class="card">🏡 Spacious Rooms</div>
-    <div class="card">🌳 Open Lawn & Garden</div>
-    <div class="card">🚗 Parking Facility</div>
+    <div class="card">🌳 Garden & Lawn</div>
+    <div class="card">🚗 Parking</div>
     <div class="card">🪑 Outdoor Seating</div>
     <div class="card">🌿 Peaceful Environment</div>
   </div>
@@ -187,31 +188,29 @@ footer {
 <section id="gallery">
   <h2>Gallery</h2>
   <div class="gallery">
-    <img src="img1.jpg" alt="Farmhouse">
-    <img src="img2.jpg" alt="Pool">
-    <img src="img3.jpg" alt="Lawn">
+    <img src="img1.jpg">
+    <img src="img2.jpg">
+    <img src="img3.jpg">
   </div>
 </section>
 
 <section id="contact">
-  <h2>Contact Us</h2>
-
+  <h2>Contact</h2>
   <div class="contact-box">
     <p><b>📞 Sagar Dalbanjan:</b> 8095653395</p>
     <p><b>📞 Guru Dalbanjan:</b> 7795590723</p>
 
     <p><b>📍 Location:</b><br>
     Dalabanjan Oaks Farmhouse,<br>
-    96M7+9JR, Kusugal, Karnataka 580023
+    Kusugal, Karnataka 580023
     </p>
 
-    <a class="btn" href="https://maps.google.com/?q=96M7+9JR">View on Google Maps</a>
+    <a class="btn" href="https://maps.google.com/?q=96M7+9JR">View Location</a>
   </div>
-
 </section>
 
 <footer>
-  <p>© 2026 Dalabanjan Oaks Farm House | All Rights Reserved</p>
+  <p>© 2026 Dalabanjan Oaks Farm House</p>
 </footer>
 
 </body>
